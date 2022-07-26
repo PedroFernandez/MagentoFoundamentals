@@ -5,6 +5,6 @@
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'MagentoFoundamentals_Unit1',
+    'MagentoFoundamentals_Unit1CustomerDump',
     __DIR__
 );
