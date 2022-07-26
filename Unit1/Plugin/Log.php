@@ -1,6 +1,6 @@
 <?php
 
-namespace Unit1\CustomerFormDump\Plugin;
+namespace Unit1\Plugin;
 
 class Log
 {
