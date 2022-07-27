@@ -1,4 +1,4 @@
 # MagentoFoundamentals
 
-This is a test
+Magento Foundamentals part 1 exercises
 
