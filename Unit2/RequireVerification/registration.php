@@ -6,6 +6,6 @@
 // Exercise: 1.4.2.1
 Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Unit1_VerifyOrders',
+    'Unit2_RequireVerification',
     __DIR__
 );
