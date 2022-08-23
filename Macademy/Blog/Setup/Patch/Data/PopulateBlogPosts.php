@@ -42,6 +42,11 @@ class PopulateBlogPosts implements DataPatchInterface
         $post->setData([
             'title' => 'An awesome post',
             'content' => 'This is totally awesome!',
+            'title' => 'SUPERMAN: Man of Steel',
+            'content' => 'My favourite superman movie!',
+        ], [
+            'title' => 'SUPERMAN: Man of Steel',
+            'content' => 'My favourite superman movie!',
         ]);
         $this->postRepository->save($post);
 
