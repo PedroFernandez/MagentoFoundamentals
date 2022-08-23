@@ -1,4 +1,4 @@
-<?php declare(strict_types =1);
+<?php declare(strict_types=1);
 
 namespace Macademy\Blog\ViewModel;
 
@@ -7,7 +7,7 @@ use Magento\Framework\View\Element\Block\ArgumentInterface;
 
 class Post implements ArgumentInterface
 {
-    public function getList()
+    public function getList(): array
     {
         return [
             new DataObject(['id' => 1, 'title' => 'Post A']),
