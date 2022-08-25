@@ -38,17 +38,24 @@ class PopulateBlogPosts implements DataPatchInterface
     {
         $this->moduleDataSetup->startSetup();
 
-        $post = $this->postFactory->create();
-        $post->setData([
-            'title' => 'An awesome post',
-            'content' => 'This is totally awesome!',
-            'title' => 'SUPERMAN: Man of Steel',
-            'content' => 'My favourite superman movie!',
-        ], [
-            'title' => 'SUPERMAN: Man of Steel',
-            'content' => 'My favourite superman movie!',
-        ]);
-        $this->postRepository->save($post);
+        $posts = [
+            [
+                'title' => 'An awesome post',
+                'content' => 'This is totally awesome!',
+            ], [
+                'title' => 'SUPERMAN: Man of Steel',
+                'content' => 'My favourite superman movie!',
+            ], [
+                'title' => 'Batman, the Dark Knight',
+                'content' => 'Best movie ever',
+            ]
+        ];
+
+        foreach ($posts as $postData) {
+            $post = $this->postFactory->create();
+            $post->setData($postData);
+            $this->postRepository->save($post);
+        }
 
         $this->moduleDataSetup->endSetup();
     }
