@@ -5,7 +5,6 @@
             <block name="blog.list" template="Macademy_Blog::post/list.phtml">
                 <arguments>
                     <argument name="post_vm" xsi:type="object">Macademy\Blog\ViewModel\Post</argument>
-                    <argument name="count_posts" xsi:type="object">Macademy\Blog\ViewModel\Count</argument>
                 </arguments>
             </block>
         </referenceContainer>
