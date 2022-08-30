@@ -39,7 +39,9 @@ class Post implements ArgumentInterface
     public function getDetail(): PostInterface
     {
         $id = (int)$this->request->getParam('id');
-        var_dump($id);
+        if ($id === 0) {
+            $id = 1;
+        }
         return $this->postRepository->getById($id);
     }
 }
